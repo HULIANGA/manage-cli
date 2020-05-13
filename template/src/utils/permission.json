@@ -1,0 +1,871 @@
+// 各个页面和权限点数据
+[
+  {
+    "action_name": "空",
+    "children": [
+      {
+        "action_name": "首页",
+        "action_code": "index",
+        "path": "/dashboard/index",
+        "icon": "md-home",
+        "children": [
+          {
+            "action_name": "方舟操作手册",
+            "action_code": "index:doc",
+            "type": "功能点"
+          },
+          {
+            "action_name": "邮件/短信营销操作说明",
+            "action_code": "index:mailDoc",
+            "type": "功能点"
+          },
+          {
+            "action_name": "策略配置对接文档",
+            "action_code": "index:strategyDoc",
+            "type": "功能点"
+          },
+          {
+            "action_name": "开发者平台入口",
+            "action_code": "index:portal",
+            "type": "功能点"
+          },
+          {
+            "action_name": "运营后台入口",
+            "action_code": "index:batcloud",
+            "type": "功能点"
+          },
+          {
+            "action_name": "原策略后台入口",
+            "action_code": "index:batcloudOld",
+            "type": "功能点"
+          },
+          {
+            "action_name": "UMK入口",
+            "action_code": "index:UMK",
+            "type": "功能点"
+          },
+          {
+            "action_name": "BI入口",
+            "action_code": "index:BI",
+            "type": "功能点"
+          },
+          {
+            "action_name": "快速开始-新建AB",
+            "action_code": "index:AB",
+            "type": "功能点"
+          },
+          {
+            "action_name": "快速开始-新建精细化",
+            "action_code": "index:meticulous",
+            "type": "功能点"
+          },
+          {
+            "action_name": "快速开始-新建营销方案",
+            "action_code": "index:marketing",
+            "type": "功能点"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "action_name": "产品服务",
+    "action_code": "prodcutService",
+    "children": [
+      {
+        "action_name": "产品管理",
+        "action_code": "prodcutService:prodcut",
+        "path": "/application/list",
+        "icon": "md-apps",
+        "children": [
+          {
+            "action_name": "新增",
+            "action_code": "prodcutService:prodcut:create",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "prodcutService:prodcut:edit",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "平台管理",
+        "action_code": "prodcutService:platform",
+        "path": "/product/putin/platform",
+        "icon": "md-cloud",
+        "children": [
+          {
+            "action_name": "新增",
+            "action_code": "prodcutService:platform:create",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "prodcutService:platform:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "prodcutService:platform:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "客户管理",
+        "action_code": "prodcutService:customer",
+        "path": "/customer/list",
+        "icon": "md-contact",
+        "children": [
+          {
+            "action_name": "新增",
+            "action_code": "prodcutService:customer:create",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "prodcutService:customer:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "prodcutService:customer:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "投放账号",
+        "action_code": "prodcutService:putinAccount",
+        "path": "/product/putin/account/list",
+        "icon": "md-filing",
+        "children": [
+          {
+            "action_name": "发行Tab",
+            "action_code": "prodcutService:putinAccount:tab1",
+            "type": "功能点"
+          },
+          {
+            "action_name": "营销Tab",
+            "action_code": "prodcutService:putinAccount:tab2",
+            "type": "功能点"
+          },
+          {
+            "action_name": "新增发行账号",
+            "action_code": "prodcutService:putinAccount:create1",
+            "type": "功能点"
+          },
+          {
+            "action_name": "新增营销账号",
+            "action_code": "prodcutService:putinAccount:create2",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑发行账号",
+            "action_code": "prodcutService:putinAccount:edit1",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑营销账号",
+            "action_code": "prodcutService:putinAccount:edit2",
+            "type": "功能点"
+          },
+          {
+            "action_name": "导出发行账号",
+            "action_code": "prodcutService:putinAccount:export1",
+            "type": "功能点"
+          },
+          {
+            "action_name": "导出营销账号",
+            "action_code": "prodcutService:putinAccount:export2",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改发行账号状态",
+            "action_code": "prodcutService:putinAccount:status1",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改营销账号状态",
+            "action_code": "prodcutService:putinAccount:status2",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "变现账号",
+        "action_code": "prodcutService:realizeAccount",
+        "path": "/product/realize/account/list",
+        "icon": "md-timer",
+        "children": [
+          {
+            "action_name": "新增",
+            "action_code": "prodcutService:realizeAccount:create",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "prodcutService:realizeAccount:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "导出",
+            "action_code": "prodcutService:realizeAccount:export",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "prodcutService:realizeAccount:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "代理管理",
+        "action_code": "prodcutService:agent",
+        "path": "/product/agent/list",
+        "icon": "md-git-network",
+        "children": [
+          {
+            "action_name": "新增",
+            "action_code": "prodcutService:agent:create",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "prodcutService:agent:edit",
+            "type": "功能点"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "action_name": "策略服务",
+    "action_code": "strategyService",
+    "children": [
+      {
+        "action_name": "策略配置",
+        "action_code": "strategyService:config",
+        "icon": "md-document",
+        "children": [
+          {
+            "action_name": "精细化运营",
+            "action_code": "strategyService:config:meticulous",
+            "path": "/strategy/meticulous/list",
+            "children": [
+              {
+                "action_name": "新增",
+                "action_code": "strategyService:config:meticulous:create",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "strategyService:config:meticulous:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "修改状态",
+                "action_code": "strategyService:config:meticulous:status",
+                "type": "功能点"
+              },
+              {
+                "action_name": "复制",
+                "action_code": "strategyService:config:meticulous:copy",
+                "type": "功能点"
+              },
+              {
+                "action_name": "日志",
+                "action_code": "strategyService:config:meticulous:log",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "AB Test",
+            "action_code": "strategyService:config:abtest",
+            "path": "/strategy/abtest/list",
+            "children": [
+              {
+                "action_name": "新增",
+                "action_code": "strategyService:config:abtest:create",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "strategyService:config:abtest:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "修改状态",
+                "action_code": "strategyService:config:abtest:status",
+                "type": "功能点"
+              },
+              {
+                "action_name": "复制",
+                "action_code": "strategyService:config:abtest:copy",
+                "type": "功能点"
+              },
+              {
+                "action_name": "日志",
+                "action_code": "strategyService:config:abtest:log",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "控制项配置",
+            "action_code": "strategyService:config:control",
+            "path": "/strategy/business",
+            "children": [
+              {
+                "action_name": "新增",
+                "action_code": "strategyService:config:control:create",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "strategyService:config:control:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "隐藏",
+                "action_code": "strategyService:config:control:hide",
+                "type": "功能点"
+              },
+              {
+                "action_name": "字段配置",
+                "action_code": "strategyService:config:control:code",
+                "type": "功能点"
+              },
+              {
+                "action_name": "新增字段",
+                "action_code": "strategyService:config:control:addCode",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑字段",
+                "action_code": "strategyService:config:control:editCode",
+                "type": "功能点"
+              },
+              {
+                "action_name": "隐藏字段",
+                "action_code": "strategyService:config:control:hideCode",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "受众源配置",
+            "action_code": "strategyService:config:audiences",
+            "path": "/strategy/audiences",
+            "children": [
+              {
+                "action_name": "Tab-基础属性",
+                "action_code": "strategyService:config:audiences:tabBasic",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-业务属性",
+                "action_code": "strategyService:config:audiences:tabBusiness",
+                "type": "功能点"
+              },
+              {
+                "action_name": "基础属性-新增",
+                "action_code": "strategyService:config:audiences:basicAdd",
+                "type": "功能点"
+              },
+              {
+                "action_name": "基础属性-编辑",
+                "action_code": "strategyService:config:audiences:basicEdit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "基础属性-隐藏",
+                "action_code": "strategyService:config:audiences:basicHide",
+                "type": "功能点"
+              },
+              {
+                "action_name": "业务属性-新增",
+                "action_code": "strategyService:config:audiences:businessAdd",
+                "type": "功能点"
+              },
+              {
+                "action_name": "业务属性-编辑",
+                "action_code": "strategyService:config:audiences:businessEdit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "业务属性-隐藏",
+                "action_code": "strategyService:config:audiences:businessHide",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "黑白名单",
+            "action_code": "strategyService:config:blackWhite",
+            "path": "/user/blackWhite",
+            "children": [
+              {
+                "action_name": "Tab-白名单",
+                "action_code": "strategyService:config:blackWhite:white",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-黑名单",
+                "action_code": "strategyService:config:blackWhite:black",
+                "type": "功能点"
+              },
+              {
+                "action_name": "白名单-新增",
+                "action_code": "strategyService:config:blackWhite:whiteAdd",
+                "type": "功能点"
+              },
+              {
+                "action_name": "白名单-编辑",
+                "action_code": "strategyService:config:blackWhite:whiteEdit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "白名单-删除",
+                "action_code": "strategyService:config:blackWhite:whiteDelete",
+                "type": "功能点"
+              },
+              {
+                "action_name": "黑名单-新增",
+                "action_code": "strategyService:config:blackWhite:blackAdd",
+                "type": "功能点"
+              },
+              {
+                "action_name": "黑名单-编辑",
+                "action_code": "strategyService:config:blackWhite:blackEdit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "黑名单-删除",
+                "action_code": "strategyService:config:blackWhite:blackDelete",
+                "type": "功能点"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "action_name": "邮件/短信营销",
+        "action_code": "strategyService:market",
+        "icon": "md-mail",
+        "children": [
+          {
+            "action_name": "营销推广管理",
+            "action_code": "strategyService:market:manage",
+            "path": "/marketing/manage/list",
+            "children": [
+              {
+                "action_name": "新增",
+                "action_code": "strategyService:market:manage:add",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "strategyService:market:manage:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "删除",
+                "action_code": "strategyService:market:manage:delete",
+                "type": "功能点"
+              },
+              {
+                "action_name": "复制",
+                "action_code": "strategyService:market:manage:copy",
+                "type": "功能点"
+              },
+              {
+                "action_name": "启动",
+                "action_code": "strategyService:market:manage:status",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "邮件内容管理",
+            "action_code": "strategyService:market:email",
+            "path": "/marketing/email/list",
+            "children": [
+              {
+                "action_name": "新增",
+                "action_code": "strategyService:market:email:add",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "strategyService:market:email:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "删除",
+                "action_code": "strategyService:market:email:delete",
+                "type": "功能点"
+              },
+              {
+                "action_name": "发送邮件",
+                "action_code": "strategyService:market:email:send",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "发送记录",
+            "action_code": "strategyService:market:sendRecord",
+            "path": "/marketing/sendRecord",
+            "children": [
+              {
+                "action_name": "Tab-邮件发送记录",
+                "action_code": "strategyService:market:sendRecord:email",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-短信发送记录",
+                "action_code": "strategyService:market:sendRecord:message",
+                "type": "功能点"
+              }
+            ]
+          },
+          {
+            "action_name": "设置",
+            "action_code": "strategyService:market:setup",
+            "path": "/marketing/setup",
+            "children": [
+              {
+                "action_name": "Tab-全局策略控制",
+                "action_code": "strategyService:market:setup:strategy",
+                "type": "功能点"
+              },
+              {
+                "action_name": "全局策略控制-保存",
+                "action_code": "strategyService:market:setup:save",
+                "type": "功能点"
+              },
+              {
+                "action_name": "全局策略控制-邮件导入",
+                "action_code": "strategyService:market:setup:emailImport",
+                "type": "功能点"
+              },
+              {
+                "action_name": "全局策略控制-短信导入",
+                "action_code": "strategyService:market:setup:messageImport",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-邮件默认设置",
+                "action_code": "strategyService:market:setup:email",
+                "type": "功能点"
+              },
+              {
+                "action_name": "邮件默认设置-编辑",
+                "action_code": "strategyService:market:setup:emailEdit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-服务商对接设置",
+                "action_code": "strategyService:market:setup:service",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-邮件发送Mailchimp",
+                "action_code": "strategyService:market:setup:Mailchimp",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-短信发送Globalsent",
+                "action_code": "strategyService:market:setup:Globalsent",
+                "type": "功能点"
+              },
+              {
+                "action_name": "Tab-用户标签",
+                "action_code": "strategyService:market:setup:userTag",
+                "type": "功能点"
+              },
+              {
+                "action_name": "用户标签-设置控件类型",
+                "action_code": "strategyService:market:setup:userTagComponent",
+                "type": "功能点"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "action_name": "增长服务",
+    "action_code": "growService",
+    "children": [
+      {
+        "action_name": "投放实时监控",
+        "action_code": "growService:advert",
+        "path": "/grow/advert",
+        "icon": "md-list-box",
+        "children": [
+          {
+            "action_name": "批量暂停",
+            "action_code": "growService:advert:MultPause",
+            "type": "功能点"
+          },
+          {
+            "action_name": "批量启用",
+            "action_code": "growService:advert:MultStart",
+            "type": "功能点"
+          },
+          {
+            "action_name": "日志",
+            "action_code": "growService:advert:log",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "growService:advert:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "投放智能止损",
+        "action_code": "growService:rules",
+        "path": "/grow/adRunRules/list",
+        "icon": "logo-buffer",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "growService:rules:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "growService:rules:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "日志",
+            "action_code": "growService:rules:log",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "growService:rules:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "授权管理",
+        "action_code": "growService:auth",
+        "path": "/grow/auth",
+        "icon": "md-person-add",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "growService:auth:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "growService:auth:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "日志",
+            "action_code": "growService:auth:log",
+            "type": "功能点"
+          },
+          {
+            "action_name": "重新授权",
+            "action_code": "growService:auth:reAuth",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "投放人效分析",
+        "action_code": "growService:efficiency",
+        "path": "/grow/efficiency",
+        "icon": "md-trending-up"
+      },
+      {
+        "action_name": "投放数据总览",
+        "action_code": "growService:dashboard",
+        "path": "/grow/dashboard",
+        "icon": "md-stats"
+      }
+    ]
+  },
+  {
+    "action_name": "商业化服务",
+    "action_code": "businessService",
+    "children": [
+      {
+        "action_name": "商业化管理",
+        "action_code": "businessService:manage",
+        "icon": "md-briefcase",
+        "children": [
+          {
+            "action_name": "商业化配置",
+            "action_code": "businessService:manage:config",
+            "path": "/bussiness/manage/config",
+            "children": [
+              {
+                "action_name": "新建",
+                "action_code": "businessService:manage:config:add",
+                "type": "功能点"
+              },
+              {
+                "action_name": "编辑",
+                "action_code": "businessService:manage:config:edit",
+                "type": "功能点"
+              },
+              {
+                "action_name": "复制",
+                "action_code": "businessService:manage:config:copy",
+                "type": "功能点"
+              },
+              {
+                "action_name": "修改状态",
+                "action_code": "businessService:manage:config:status",
+                "type": "功能点"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "action_name": "广告位管理",
+        "action_code": "businessService:advertise:list",
+        "icon": "md-images",
+        "path": "/bussiness/advertise/list",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "businessService:advertise:list:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "businessService:advertise:list:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "businessService:advertise:list:status",
+            "type": "功能点"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "action_name": "系统配置",
+    "action_code": "systemService",
+    "children": [
+      {
+        "action_name": "账号管理",
+        "action_code": "systemService:account",
+        "path": "/purview/account",
+        "icon": "md-person",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "systemService:account:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "systemService:account:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "日志",
+            "action_code": "systemService:account:log",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "systemService:account:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "角色管理",
+        "action_code": "systemService:role",
+        "path": "/purview/role",
+        "icon": "md-people",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "systemService:role:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "systemService:role:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "修改状态",
+            "action_code": "systemService:role:status",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "数据字典",
+        "action_code": "systemService:dictionary",
+        "path": "/system/dictionary",
+        "icon": "md-bookmarks",
+        "children": [
+          {
+            "action_name": "新建",
+            "action_code": "systemService:dictionary:add",
+            "type": "功能点"
+          },
+          {
+            "action_name": "编辑",
+            "action_code": "systemService:dictionary:edit",
+            "type": "功能点"
+          },
+          {
+            "action_name": "删除",
+            "action_code": "systemService:dictionary:delete",
+            "type": "功能点"
+          }
+        ]
+      },
+      {
+        "action_name": "导出记录",
+        "action_code": "systemService:export",
+        "path": "/system/export",
+        "icon": "md-download"
+      },
+      {
+        "action_name": "API接口文档",
+        "action_code": "systemService:api",
+        "icon": "md-albums",
+        "children": [
+          {
+            "action_name": "前台接口",
+            "action_code": "systemService:api:front",
+            "path": "/document/front"
+          },
+          {
+            "action_name": "后台接口",
+            "action_code": "systemService:api:back",
+            "path": "/document/backstage"
+          }
+        ]
+      }
+    ]
+  }
+]

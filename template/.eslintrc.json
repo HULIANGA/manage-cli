@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["html"],
+  "settings": {
+    "html/html-extensions": [".html", ".we"],
+    "html/report-bad-indent": "error"
+  },
+  "extends": ["standard", "plugin:vue/recommended"],
+  "rules": {
+    "comma-dangle": 0,
+    "vue/max-attributes-per-line": 0,
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/multiline-html-element-content-newline": "off",
+    "vue/no-parsing-error": [
+      2,
+      {
+        "x-invalid-end-tag": false
+      }
+    ],
+    "vue/no-use-v-if-with-v-for": 0,
+    "vue/max-attributes-per-line": 0,
+    "camelcase": 0,
+    "vue/html-self-closing": 0,
+    "no-extra-semi": "error",
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "eol-last": 0,
+    "indent": 0,
+    "vue/html-indent": 0,
+    "space-before-function-paren": 0,
+    "no-prototype-builtins": 0,
+    "no-useless-computed-key": 0,
+    "no-mixed-operators": 0,
+    "operator-linebreak": 0,
+    "vue/require-default-prop": 0,
+    "no-useless-return": 0,
+    "vue/v-bind-style": 0,
+    "no-useless-escape": 0
+  }
+}

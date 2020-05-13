@@ -1,0 +1,224 @@
+@import '../lib/custom.less';
+
+textarea.ivu-input {
+    font-size: inherit;
+}
+.ivu-input-group-prepend,
+.ivu-input-group-append {
+    height: 33px;
+}
+
+// .ivu-table {
+//     border: 1px solid #E5E5E5;
+// }
+
+.ivu-table-cell {
+    overflow: visible;
+}
+
+// 背景为白色父级类
+.app-container {
+    background-color: #fff;
+    min-height      : calc(100vh - 80px);
+    border-radius   : @border-radius-base;
+    padding         : 12px;
+}
+
+// 表单页
+.container-form {
+    width           : 600px;
+    margin          : 20px auto 0;
+    padding         : 40px;
+    box-shadow      : rgba(0, 0, 0, 0.16) 1px 0px 4px;
+    background-color: #fff;
+    border-radius   : @border-radius-base;
+
+    // 表单页最后一个item不需要margin-bottom
+    .ivu-form-item:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+// 列表页过滤条件
+.filter-card .ivu-card-body {
+    padding: 6px;
+}
+
+.filter-card+.filter-card {
+    margin-top: 10px;
+}
+
+.filter-left {
+    margin-right: 10px;
+}
+
+// 列表底部
+.footer-card {
+    margin-top: 10px;
+
+    .ivu-card-body {
+        padding: 6px;
+    }
+}
+
+// 过滤条件表单长度
+.filter-form-width {
+    width: 200px;
+
+    &+&:not(.has-filter-type),
+    &+.filter-check-button {
+        margin-left: 10px;
+    }
+
+    .ivu-btn {
+        min-width: 40px;
+    }
+
+    .ivu-input-suffix i {
+        line-height: initial;
+        color      : #fff;
+    }
+}
+
+// 过滤条件类型
+.filter-type {
+    width       : 100px;
+    margin-right: 4px;
+}
+
+// 列表页表格
+.list-page-table {
+    border: 1px solid #E5E5E5;
+    margin-top: 10px;
+    border-bottom: 0;
+}
+.table-page-container {
+    margin-top: @padding-sm;
+    text-align: center;
+}
+
+.ivu-input-group-prepend,
+.ivu-input-group-append {
+    height: auto;
+}
+
+// 表格状态点
+.table-status-success::before,
+.table-status-fail::before,
+.table-status-gray::before,
+.table-status-green::before,
+.table-status-black::before,
+.table-status-red::before {
+    width         : 6px;
+    height        : 6px;
+    border-radius : 50%;
+    display       : inline-block;
+    margin-top    : -2px;
+    content       : '';
+    vertical-align: middle;
+}
+
+.table-status-success::before {
+    background-color: @success-color;
+}
+
+.table-status-fail::before {
+    background-color: @error-color;
+}
+
+.table-status-gray::before {
+    background-color: gray;
+}
+
+.table-status-green::before {
+    background-color: green;
+}
+
+.table-status-black::before {
+    background-color: black;
+}
+
+.table-status-red::before {
+    background-color: red;
+}
+
+.bg-success {
+    background-color: @success-color;
+}
+
+.bg-error {
+    background-color: @error-color;
+}
+
+.ivu-tooltip-popper {
+    word-break: break-all;
+}
+
+
+// 2020.1.10 by huliang
+// 列表页操作按钮
+.common-list-btn-container {
+    padding: @padding-md 0;
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .inline-alert { // 选中提示
+        display: inline-block;
+        .alert-clean {
+          margin-left: @padding-md;
+        }
+        :global(.ivu-alert) {
+          margin: 0 0 0 @padding-md;
+          padding-top: 7px; // 和按钮高度一致
+          padding-bottom: 7px;
+        }
+        :global(.ivu-alert-icon) {
+          top: 5px;
+        }
+    }
+}
+
+// 详情页步骤条
+.common-step-container {
+    padding      : @padding-md;
+    margin-bottom: @padding-md;
+}
+
+// 详情页底部按钮
+.common-botfix-btn-container {
+    position        : fixed;
+    bottom          : 0;
+    right           : 0;
+    left            : 200px;
+    padding         : @padding-sm @padding-md;
+    background-color: @white;
+    box-shadow      : @shadow-up;
+    text-align      : center;
+    z-index         : 9;
+}
+
+// 详情页底部margin，避免被底部按钮挡住
+.common-detail-page-container {
+    margin-bottom: 60px;
+}
+.card-container + .card-container {
+    margin-top: @padding-sm;
+}
+
+.one-line {
+    display      : inline-block !important;
+    text-overflow: ellipsis !important;
+    white-space  : nowrap !important;
+    overflow     : hidden !important;
+}
+
+.two-line {
+    overflow          : hidden !important;
+    text-overflow     : ellipsis !important;
+    display           : -webkit-box !important;
+    -webkit-line-clamp: 2 !important; // 控制多行的行数
+    -webkit-box-orient: vertical !important;
+
+}
