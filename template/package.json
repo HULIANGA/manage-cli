@@ -15,15 +15,6 @@
     "start": "vue-cli-service serve --mode staging",
     "test:e2e": "vue-cli-service test:e2e"
   },
-  "files": [
-    "src/",
-    "dist/",
-    "public/",
-    "_gitignore",
-    ".babelrc",
-    ".postcssrc",
-    "vue.config.js"
-  ],
   "dependencies": {
     "@antv/data-set": "^0.11.4",
     "@antv/g2": "^4.0.4",
