@@ -1,6 +1,6 @@
 {
   "name": "zhizh-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "zhizh": "bin/zhizh.js"
